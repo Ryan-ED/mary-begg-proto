@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* CSS in App.css */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+/* Hide desktop-only elements on screens smaller than 768px and show mobile-only elements */
+@media screen and (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+
+.mobile-tabs i {
+  font-size: 2em;
+}
